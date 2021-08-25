@@ -1,0 +1,11 @@
+{
+    "params":
+    {
+        "local_server":"TRUE",
+        "local_uri":"mysql://root:@localhost/thecleandb",
+        "production_uri":"mysql://root:@localhost/thecleandb",
+        "fb_link":"https://facebook.com",
+        "Twitter_link":"https://twitter.com"
+    }
+
+}
