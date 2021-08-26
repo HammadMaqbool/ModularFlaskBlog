@@ -17,7 +17,7 @@ routes_blueprint = Blueprint('routes_blueprint',__name__)
 @routes_blueprint.route('/index')
 @routes_blueprint.route('/')
 def home():
-    return render_template('index.html', JinjaParam= LoadedJson)
+    return render_template('index.html', JinjaParam= LoadedJson, posts = OnHomeShowPosts())
 
 
 @routes_blueprint.route('/post/<slug_of_post>')
@@ -43,4 +43,7 @@ def about():
 
 
 #Methods to Work with the database. . . .
+def OnHomeShowPosts():
+    post = Posts.query.filter_by().all()[0:3]
+    return post
 
