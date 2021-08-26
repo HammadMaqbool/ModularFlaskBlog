@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-with open('config.json','r') as jsonFile:
+with open('blog/config.json','r') as jsonFile:
     JsonData = json.load(jsonFile)['params']
 
 app = Flask(__name__)

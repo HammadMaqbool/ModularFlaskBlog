@@ -4,7 +4,7 @@
         "local_server":"TRUE",
         "local_uri":"mysql://root:@localhost/thecleandb",
         "production_uri":"mysql://root:@localhost/thecleandb",
-        "fb_link":"https://facebook.com",
+        "fb_link":"https://facebook.com/IamHammadMaqbool",
         "Twitter_link":"https://twitter.com"
     }
 
