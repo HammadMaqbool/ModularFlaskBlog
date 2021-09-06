@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+</head>
+<body>
+    <div align="center">
+        <h2>Edit Your Post here</h2>
+        <form action="/edit_post/{{posts.sno}}" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        S.No :
+                    </td>
+                    <td>
+                        <input type="text" name="sno" value="{{posts.sno}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Title:
+                    </td>
+                    <td>
+                        <input type="text" name="title" value="{{posts.title}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Slug:
+                    </td>
+                    <td>
+                        <input type="text" name="slug" value="{{posts.slug}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Contents
+                    </td>
+                    <td>
+                        
+                        <input type="text" name="content" value="{{posts.content}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       Date
+                    </td>
+                    <td>
+                        <input type="text" name="date" value="{{posts.date}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">Update Post</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+</body>
+</html>
