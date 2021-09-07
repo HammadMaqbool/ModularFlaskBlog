@@ -2,7 +2,7 @@ from datetime import datetime
 from operator import pos
 import re
 from sys import path_hooks
-from flask import Blueprint, request, session
+from flask import Blueprint, request, session, flash
 from flask.templating import render_template
 from sqlalchemy.orm import joinedload
 from werkzeug.utils import redirect, secure_filename
@@ -44,6 +44,7 @@ def contact():
         #Coded a class in Controler folder and all the code to save the data into the database is there. . .
         var = GetContactData()
         var.GetFormDatatoSave()
+        flash('Message send successfully, Thanks for Contacting us.')
         return render_template('contact.html', JinjaParam= LoadedJson)
     else:
         return render_template('contact.html', JinjaParam= LoadedJson)
