@@ -10,5 +10,10 @@ Flask is a minimalistic framwork, due to which people usually think it is unable
 ## What is mean by Modular Blog?What is mean by Modular Blog:question:
 Mostly developers develop app with the flask which based on only one python file app.py which holds the routes, Datamodel and all the other necessory stuff of the app which make it more complex and we start avoiding flask for developing the larg-scale applications.
 
-I am developing this blog app *which is offcourse not a big application* but I am I have divided this app into small modules like my Database models are in seprate folder and Routes are in a seprate place like Database models.
+I developed this blog app *which is offcourse not a big application* I divided this app into small modules like my Database models are in seprate folder and Routes are in a seprate place like Database models.
 By this way app is becoming more organized and it will be easy as well to expand it as much you like. 
+
+I have implemented all the possible different ways to perform the same tasks. . . .
+
+## :open_file_folder: 
+Database script is included in the folder you can download it.
