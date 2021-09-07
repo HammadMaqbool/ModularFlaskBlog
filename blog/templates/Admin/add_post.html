@@ -9,7 +9,7 @@
 <body>
     <div align="center">
         <h2>Add Your Post here</h2>
-        <form action="/add_post" method="POST">
+        <form action="/add_post" method="POST" enctype="multipart/form-data">
             <table>
                
                 <tr>
@@ -33,16 +33,15 @@
                         Contents
                     </td>
                     <td>
-                        
                         <input type="text" name="content">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                       Date
+                        Chose file :
                     </td>
                     <td>
-                        <input type="text" name="date">
+                        <input type="file" name="fileOne">
                     </td>
                 </tr>
                 <tr>
@@ -50,6 +49,7 @@
                         <button type="submit">Update Post</button>
                     </td>
                 </tr>
+                
             </table>
         </form>
         </div>

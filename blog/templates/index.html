@@ -22,7 +22,7 @@
 
                     <!--Area to replace with Jinja2-->
                     <!-- Post preview-->
-                    {% for post in posts %}
+                    {% for post in posts.items %}
                     <div class="post-preview">
                         <a href="post/{{post.slug}}">
                             <h2 class="post-title">{{post.title}}</h2>
@@ -38,8 +38,15 @@
                    <!--Area to replace with Jinja2-->
                    {%endfor%}
 
+
                     <!-- Pager-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                    {% if posts.prev_num %}
+                    <div class="d-flex justify-content-end mb-4" style="float: left;"><a class="btn btn-primary text-uppercase" href="/index/page/{{posts.prev_num}}">Previous</a></div>
+                    {% endif %}
+
+                    {% if posts.next_num %}
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="/index/page/{{posts.next_num}}">Next</a></div>
+                    {% endif %}
                 </div>
             </div>
         </div>
